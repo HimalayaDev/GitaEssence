@@ -1,5 +1,6 @@
 import './Home.css';
-import { Container, Card, Ratio, Row, Col, Image } from 'react-bootstrap';
+import { Container, Card, Ratio, Row, Col, Image, Button } from 'react-bootstrap';
+import CardGrid from './CardGrid';
 
 function Home() {
     const videoId = "fnRdJI7aGFo";
@@ -67,6 +68,9 @@ function Home() {
                     </Col>
                 </Row>
             </Container>
+            <h1>Featured Programs</h1>
+            <CardGrid />
+            <button>Explore</button>
         </>
     );
 }
