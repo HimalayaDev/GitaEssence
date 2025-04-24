@@ -1,6 +1,6 @@
 import { Row, Col, Card, Button } from 'react-bootstrap';
 
-function CardGrid() {
+function CourseGrid() {
     const cardsData = [
         {
             id: 1,
@@ -47,23 +47,27 @@ function CardGrid() {
     ];
 
     return (
-        <Row xs={1} md={3} className="g-4">
-            {cardsData.map((card) => (
-                <Col key={card.id}>
-                    <Card>
-                        <Card.Img variant="top" src={card.image} />
-                        <Card.Body>
-                            <Card.Title>{card.title}</Card.Title>
-                            <Card.Text>
-                                {card.text}
-                            </Card.Text>
-                            <Button variant="primary">{card.buttonText}</Button>
-                        </Card.Body>
-                    </Card>
-                </Col>
-            ))}
-        </Row>
+        <>
+            <h1>Featured Programs</h1>
+            <Row xs={1} md={3} className="g-4">
+                {cardsData.map((card) => (
+                    <Col key={card.id}>
+                        <Card>
+                            <Card.Img variant="top" src={card.image} />
+                            <Card.Body>
+                                <Card.Title>{card.title}</Card.Title>
+                                <Card.Text>
+                                    {card.text}
+                                </Card.Text>
+                                <Button variant="primary">{card.buttonText}</Button>
+                            </Card.Body>
+                        </Card>
+                    </Col>
+                ))}
+            </Row>
+            <button>Explore</button>
+        </>
     );
 }
 
-export default CardGrid;
+export default CourseGrid;

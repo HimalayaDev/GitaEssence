@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Navbar, Nav, Container, Form, FormControl, Button, NavDropdown, } from 'react-bootstrap';
 import { HeartFill, MortarboardFill } from 'react-bootstrap-icons';
+import { Link } from 'react-router';
 
 function Header() {
   const [expanded, setExpanded] = useState(false);
@@ -12,8 +13,12 @@ function Header() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#about">About Us</Nav.Link>
+            <Link to="/">
+              <Nav.Link href="#home">Home</Nav.Link>
+            </Link>
+            <Link to="About">
+              <Nav.Link href="#about">About Us</Nav.Link>
+            </Link>
             <NavDropdown title="Activities" id="basic-nav-dropdown">
               <NavDropdown.Item >Blogs</NavDropdown.Item>
               <NavDropdown.Item >Bhakti Shastri </NavDropdown.Item>
