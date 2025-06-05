@@ -9,9 +9,11 @@ function Header() {
   return (
     <Navbar bg="light" expand="lg" fixed="top">
       <Container>
-        <Navbar.Brand href=""><img src="/iskcon_logo.jpg" alt="Logo" width="80" height="40" /></Navbar.Brand>
+        <Navbar.Brand href=""><img src="/iskcon_logo.jpg" alt="Logo" width="80" height="40" />
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
+
           <Nav className="ms-auto">
             <Link to="/">
               <Nav.Link href="#home">Home</Nav.Link>
@@ -19,12 +21,21 @@ function Header() {
             <Link to="About">
               <Nav.Link href="#about">About Us</Nav.Link>
             </Link>
+
             <NavDropdown title="Activities" id="basic-nav-dropdown">
               <NavDropdown.Item >Blogs</NavDropdown.Item>
-              <NavDropdown.Item >Bhakti Shastri </NavDropdown.Item>
+              <Link to="BhaktiShastriPage">
+                <NavDropdown.Item href="BhaktiShastriPage" >Bhakti Shastri </NavDropdown.Item>
+              </Link>
               <NavDropdown.Item>Leadership Program</NavDropdown.Item>
-              <NavDropdown.Item >Spiritual Pilgrimage</NavDropdown.Item>
+              <Link to="SpiritualPilgrimage">
+                <NavDropdown.Item href="SpiritualPilgrimage">Spiritual Pilgrimage</NavDropdown.Item>
+              </Link>
+              <Link to="Retreat">
+                <NavDropdown.Item href="Retreat">Retreat</NavDropdown.Item>
+              </Link>
             </NavDropdown>
+
             <NavDropdown title="..." id="basic-nav-dropdown">
               <NavDropdown.Item >Bhakti Connect</NavDropdown.Item>
             </NavDropdown>

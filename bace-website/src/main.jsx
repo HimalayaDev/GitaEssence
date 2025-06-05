@@ -4,6 +4,9 @@ import App from './App.jsx';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Home from './Home.jsx';
 import About from './About.jsx';
+import BhaktiShastriPage from './BhaktiShastriPage.jsx';
+import SpiritualPilgrimage from './SpiritualPilgrimage.jsx';
+import Retreat from './Retreat.jsx';
 
 const br = createBrowserRouter([
     {
@@ -17,6 +20,18 @@ const br = createBrowserRouter([
             {
                 path: 'About',
                 element: <About />
+            },
+            {
+                path: 'BhaktiShastriPage',
+                element: <BhaktiShastriPage />
+            },
+            {
+                path: 'SpiritualPilgrimage',
+                element: <SpiritualPilgrimage />
+            },
+            {
+                path: 'Retreat',
+                element: <Retreat />
             }
         ]
     }
