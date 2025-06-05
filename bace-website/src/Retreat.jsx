@@ -85,8 +85,9 @@ function Retreat() {
                 <br />
                 <h2 className='text-white'>Register Today!</h2>
                 <br />
-                <Form>
-                    <Row className="mb-3 ms-5 me-5">
+                <Form className='bg-white w-75 rounded-5  container-fluid vh-200 '>
+                    <br />
+                    <Row className="mb-4 ms-5 me-5">
                         <Form.Group as={Col} controlId="formGridName">
                             <Form.Label>Full Name</Form.Label>
                             <Form.Control type="name" placeholder="Enter Name" />
@@ -100,7 +101,7 @@ function Retreat() {
 
                     </Row>
 
-                    <Row className="mb-3 ms-5 me-5">
+                    <Row className="mb-4 ms-5 me-5">
                         <Form.Group as={Col} controlId="formGridAddress1">
                             <Form.Label>Address</Form.Label>
                             <Form.Control placeholder="1234 Main St" />
@@ -115,29 +116,125 @@ function Retreat() {
 
 
 
-                    <Row className="mb-3">
+                    <Row className="mb-4 ms-5 me-5">
                         <Form.Group as={Col} controlId="formGridCity">
                             <Form.Label>City</Form.Label>
-                            <Form.Control />
+                            <Form.Control placeholder="Enter Your City" />
                         </Form.Group>
 
                         <Form.Group as={Col} controlId="formGridState">
                             <Form.Label>State</Form.Label>
                             <Form.Select defaultValue="Choose...">
                                 <option>Choose...</option>
-                                <option>...</option>
+                                <option value="1">Andaman & Nicobar (UT)</option>
+                                <option value="2">Andhra Pradesh</option>
+                                <option value="3">Arunachal Pradesh</option>
+                                <option value="4">Assam</option>
+                                <option value="5">Bihar</option>
+                                <option value="6">Chandigarh (UT)</option>
+                                <option value="7">Chhattisgarh</option>
+                                <option value="8">Dadra & Nagar Haveli and Daman & Diu (UT)</option>
+                                <option value="9">Delhi [National Capital Territory (NCT)]</option>
+                                <option value="10">Goa</option>
+                                <option value="11">Gujarat</option>
+                                <option value="12">Haryana</option>
+                                <option value="13">Himachal Pradesh</option>
+                                <option value="14">Jammu & Kashmir (UT)</option>
+                                <option value="15">Jharkhand</option>
+                                <option value="16">Karnataka</option>
+                                <option value="17">Kerala</option>
+                                <option value="18">Ladakh (UT)</option>
+                                <option value="19">Lakshadweep (UT)</option>
+                                <option value="20">Maharashtra</option>
+                                <option value="21">Madhya Pradesh</option>
+                                <option value="22">Manipur</option>
+                                <option value="23">Meghalaya</option>
+                                <option value="24">Mizoram</option>
+                                <option value="25">Nagaland</option>
+                                <option value="26">Odisha</option>
+                                <option value="27">Puducherry (UT)</option>
+                                <option value="28">Punjab</option>
+                                <option value="29">Rajasthan</option>
+                                <option value="30">Sikkim</option>
+                                <option value="31">Tamil Nadu</option>
+                                <option value="32">Tripura</option>
+                                <option value="33">Telangana</option>
+                                <option value="34">Uttar Pradesh</option>
+                                <option value="35">Uttarakhand</option>
+                                <option value="36">West Bengal</option>
                             </Form.Select>
                         </Form.Group>
 
-                        <Form.Group as={Col} controlId="formGridZip">
-                            <Form.Label>Zip</Form.Label>
-                            <Form.Control />
+
+                    </Row>
+
+                    <Row className="mb-4 ms-5 me-5">
+                        <Form.Group as={Col} controlId="formGridGender">
+                            <Form.Label>Gender</Form.Label>
+                            <Form.Select defaultValue="Choose...">
+                                <option>Choose...</option>
+                                <option value="1">Male</option>
+                                <option value="2">Female</option>
+                            </Form.Select>
+                        </Form.Group>
+
+                        <Form.Group as={Col} controlId="formGridAge">
+                            <Form.Label>Your Age</Form.Label>
+                            <Form.Control placeholder="Enter Your Age" />
                         </Form.Group>
                     </Row>
 
-                    <Button variant="primary" type="submit">
+                    <Row className="mb-4 ms-5 me-5">
+                        <Form.Group as={Col} controlId="formGridTravelOptions">
+                            <Form.Label>Choose Your Travel Options</Form.Label>
+                            <Form.Select defaultValue="Choose...">
+                                <option>Choose...</option>
+                                <option value="1">Own Arrangement</option>
+                                <option value="2">Group Bus</option>
+                            </Form.Select>
+                        </Form.Group>
+
+                        <Form.Group as={Col} controlId="formGridWeeklyProgram">
+                            <Form.Label>Which Program Do You Attend</Form.Label>
+                            <Form.Select defaultValue="Choose...">
+                                <option>Choose...</option>
+                                <option value="1">Online Only</option>
+                                <option value="2">Core Team</option>
+                                <option value="3">Saturday Programs at Wakad</option>
+                                <option value="4">Sunday Programs at Wakad</option>
+                                <option value="5">Saturday Programs at Sangaria</option>
+                                <option value="6">Sunday Programs at Mahalunege</option>
+                            </Form.Select>
+                        </Form.Group>
+                    </Row>
+
+                    <Row className="mb-4 ms-5 me-5">
+                        <Form.Group as={Col} controlId="formGridAdultNumber">
+                            <Form.Label>Number of adults coming with you</Form.Label>
+                            <Form.Control placeholder="Enter Number" />
+                        </Form.Group>
+
+                        <Form.Group as={Col} controlId="formGridChildrenNumber">
+                            <Form.Label>Number of children coming with you</Form.Label>
+                            <Form.Control placeholder="Enter Number" />
+                        </Form.Group>
+                    </Row>
+
+                    <Row className="mb-4 ms-5 me-5">
+                        <Form.Group as={Col} className="mb-3" controlId="formGridAdultNames">
+                            <Form.Label>Name of Adults:</Form.Label>
+                            <Form.Control as="textarea" rows={4} />
+                        </Form.Group>
+                        <Form.Group as={Col} className="mb-3" controlId="formGridChildrenNames">
+                            <Form.Label>Name of Childrens:</Form.Label>
+                            <Form.Control as="textarea" rows={4} />
+                        </Form.Group>
+                    </Row>
+                    <Button variant="warning" type="submit" >
                         Submit
                     </Button>
+                    <br />
+                    <br />
                 </Form>
                 <br />
             </Container >
